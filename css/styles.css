@@ -45,7 +45,6 @@ a {
 
 /* Header */
 .container {
-  display: flex;
   align-items: center;
   width: 1200px;
   padding-left: 15px;
@@ -84,6 +83,10 @@ a {
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* site nav */
 .site-nav {
   display: flex;
@@ -179,6 +182,9 @@ a {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.advantages-list {
+  display: flex;
+}
 .advantages-list .title {
   display: flex;
 
@@ -212,26 +218,36 @@ a {
 
 /* Services-list */
 
+.services-list {
+  display: flex;
+}
 .services {
   padding-bottom: 95px;
 }
 .servises-title {
   display: block;
-  margin-top: 95px;
+  margin-bottom: 50px;
 }
 
-.servises-container {
-  margin-top: 50px;
-  justify-content: space-between;
+.services-item {
+  margin-right: 30px;
+}
+
+.services-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Team */
+.team-list {
+  display: flex;
+}
 .team {
   padding-bottom: 95px;
 }
 
 .teamlist-title {
   display: block;
+  margin-bottom: 50px;
 }
 
 .teams {
@@ -240,8 +256,14 @@ a {
 }
 
 .team-card {
+  margin-right: 30px;
   padding-bottom: 30px;
 }
+
+.team-card:nth-child(4n) {
+  margin-right: 0;
+}
+
 
 .team-title {
   display: block;
@@ -321,9 +343,9 @@ address {
 /* Portfolio */
 
 /* Filters */
-.filters-box {
+.filters {
+  display: flex;
   justify-content: center;
-  margin-top: 95px;
 }
 .filters-button {
   margin-right: 8px;
